@@ -34,6 +34,10 @@ nav {
     background: rgb(148, 186, 199);
 }
 
+main {
+    grid-column: 1 / -1;
+}
+
 .navigation {
     list-style: none;
     display: flex;
@@ -49,10 +53,14 @@ nav {
 .navigation a {
     display: block;
     padding: 1.05rem 0.75rem;
-    color: white;
+    color: rgb(20, 20, 20);
     text-decoration: none;
     font-weight: 700;
     font-size: 1.05rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
 }
 
 .main-content {
