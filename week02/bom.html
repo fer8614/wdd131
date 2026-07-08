@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book of mormon</title>
+    <meta name="description" content="A simple webpage for the Book of Mormon top 10 chapters.">
+    <meta name="author" content="Yesid Fernando Cepeda B.">
+    <link rel="stylesheet" href="styles/layout.css">
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
-    
+    <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+        <form id="chapter-form" class="entry-form" novalidate>
+            <label for="favchap">Enter Book and Chapter:</label>
+            <div class="input-row">
+                <input type="text" id="favchap" placeholder="Alma 5" autocomplete="off" aria-describedby="feedback">
+                <button type="submit" id="add-button">Add Chapter</button>
+            </div>
+        </form>
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+        <ul id="list" class="list" aria-label="Top 10 chapters" aria-live="polite" aria-relevant="additions removals">
+        </ul>
+    </main>
+
 </body>
+
 </html>
