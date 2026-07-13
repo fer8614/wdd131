@@ -9,6 +9,9 @@
     --nav-bg: rgb(148, 186, 199);
     --border-color: rgb(120, 120, 120);
     --text-color: rgb(20, 20, 20);
+    --surface-color: rgb(255, 255, 255);
+    --surface-transparent: rgb(255 255 255 / 0);
+    --surface-overlay: rgb(255 255 255 / 0.35);
 }
 
 body {
@@ -19,7 +22,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: var(--text-color);
-    background: white;
+    background: var(--surface-color);
 }
 
 .site-header {
@@ -39,7 +42,7 @@ body {
 
 .menu-button {
     border: 0;
-    background: transparent;
+    background: var(--surface-transparent);
     color: var(--text-color);
     font-size: 2rem;
     line-height: 1;
@@ -73,7 +76,7 @@ body {
 
 .navigation a:hover,
 .navigation a:focus-visible {
-    background: rgba(255, 255, 255, 0.35);
+    background: var(--surface-overlay);
     text-decoration: underline;
 }
 

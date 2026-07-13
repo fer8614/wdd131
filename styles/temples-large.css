@@ -27,7 +27,7 @@
     .navigation {
         display: flex;
         flex-direction: row;
-        background: transparent;
+        background: var(--surface-transparent);
     }
 
     .navigation li {
