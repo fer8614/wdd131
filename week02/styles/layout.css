@@ -54,6 +54,7 @@ button:disabled,
 input:disabled {
     cursor: not-allowed;
     opacity: 0.65;
+    justify-content: multiple;
 }
 
 .delete {
