@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --header-bg: rgb(182, 222, 255);
-    --nav-bg: rgb(148, 186, 199);
-    --border-color: rgb(120, 120, 120);
-    --text-color: rgb(20, 20, 20);
-    --surface-color: rgb(255, 255, 255);
-    --surface-transparent: rgb(255 255 255 / 0);
-    --surface-overlay: rgb(255 255 255 / 0.35);
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -21,12 +11,12 @@ body {
     font-family: "Yuyu", sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--text-color);
-    background: var(--surface-color);
+    color: rgb(20, 20, 20);
+    background: rgb(255, 255, 255);
 }
 
 .site-header {
-    background: var(--header-bg);
+    background: rgb(182, 222, 255);
     padding: 0.85rem 1rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +32,8 @@ body {
 
 .menu-button {
     border: 0;
-    background: var(--surface-transparent);
-    color: var(--text-color);
+    background: rgb(255 255 255 / 0);
+    color: rgb(20, 20, 20);
     font-size: 2rem;
     line-height: 1;
     padding: 0.25rem 0.2rem;
@@ -58,7 +48,7 @@ body {
     list-style: none;
     display: none;
     flex-direction: column;
-    background: var(--nav-bg);
+    background: rgb(148, 186, 199);
 }
 
 #primary-nav.open .navigation {
@@ -68,7 +58,7 @@ body {
 .navigation a {
     display: block;
     padding: 0.95rem 1rem;
-    color: var(--text-color);
+    color: rgb(20, 20, 20);
     text-decoration: none;
     font-weight: 700;
     text-align: center;
@@ -76,7 +66,7 @@ body {
 
 .navigation a:hover,
 .navigation a:focus-visible {
-    background: var(--surface-overlay);
+    background: rgb(255 255 255 / 0.35);
     text-decoration: underline;
 }
 
@@ -117,7 +107,7 @@ figcaption {
 
 footer {
     margin-top: auto;
-    background: var(--header-bg);
+    background: rgb(182, 222, 255);
     padding: 0.8rem 1rem;
     text-align: center;
     line-height: 1.4;
