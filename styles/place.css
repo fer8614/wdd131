@@ -1,13 +1,13 @@
 :root {
-    --color-yellow: #fcd116;
-    --color-blue: #003893;
-    --color-red: #ce1126;
-    --color-white: #ffffff;
-    --color-text: #1a1a1a;
-    --color-muted: #333333;
-    --color-card-bg: #ffffffe6;
-    --color-header-text: #1a1a1a;
-    --color-shadow: #00000038;
+    --brand-primary: #fcd116;
+    --brand-secondary: #003893;
+    --brand-accent: #ce1126;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-muted: #333333;
+    --surface-card: #ffffffe6;
+    --ink-on-brand: #1a1a1a;
+    --shadow: #00000038;
     --font-main: "Plus Jakarta Sans", sans-serif;
     --space-xs: 0.35rem;
     --space-sm: 0.65rem;
@@ -31,16 +31,16 @@ body {
     font-family: var(--font-main);
     font-weight: 400;
     line-height: 1.55;
-    color: var(--color-text);
-    background: var(--color-white);
+    color: var(--ink);
+    background: var(--surface);
 }
 
 .site-header {
-    background: var(--color-yellow);
-    color: var(--color-header-text);
+    background: var(--brand-primary);
+    color: var(--ink-on-brand);
     text-align: center;
     padding: var(--space-md) var(--space-lg);
-    border-bottom: 0.35rem solid var(--color-blue);
+    border-bottom: 0.35rem solid var(--brand-secondary);
 }
 
 .site-header h1 {
@@ -61,12 +61,12 @@ body {
     height: auto;
     max-height: 55vh;
     object-fit: cover;
-    border-bottom: 0.2rem solid var(--color-red);
+    border-bottom: 0.2rem solid var(--brand-accent);
 }
 
 .card {
     padding: var(--space-lg) var(--space-md) var(--space-xl);
-    background: var(--color-white);
+    background: var(--surface);
 }
 
 .card h2 {
@@ -74,7 +74,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: var(--space-md);
-    color: var(--color-blue);
+    color: var(--brand-secondary);
 }
 
 .weather-icon {
@@ -101,21 +101,21 @@ body {
 .label {
     font-weight: 700;
     text-align: right;
-    color: var(--color-text);
+    color: var(--ink);
 }
 
 .value {
     text-align: left;
-    color: var(--color-muted);
+    color: var(--ink-muted);
 }
 
 footer {
     margin-top: auto;
-    background: var(--color-yellow);
-    color: var(--color-header-text);
+    background: var(--brand-primary);
+    color: var(--ink-on-brand);
     text-align: center;
     padding: var(--space-md) var(--space-lg);
-    border-top: 0.35rem solid var(--color-blue);
+    border-top: 0.35rem solid var(--brand-secondary);
     line-height: 1.45;
 }
 
