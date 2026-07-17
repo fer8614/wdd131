@@ -1,0 +1,127 @@
+:root {
+    --color-yellow: #fcd116;
+    --color-blue: #003893;
+    --color-red: #ce1126;
+    --color-white: #ffffff;
+    --color-text: #1a1a1a;
+    --color-muted: #333333;
+    --color-card-bg: rgb(255 255 255 / 0.9);
+    --color-header-text: #1a1a1a;
+    --font-main: "Plus Jakarta Sans", sans-serif;
+    --space-xs: 0.35rem;
+    --space-sm: 0.65rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --radius-card: 0.25rem;
+    --max-content: 70rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-main);
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--color-text);
+    background: var(--color-white);
+}
+
+.site-header {
+    background: var(--color-yellow);
+    color: var(--color-header-text);
+    text-align: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 0.35rem solid var(--color-blue);
+}
+
+.site-header h1 {
+    font-size: clamp(1.75rem, 5vw, 2.35rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hero-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 55vh;
+    object-fit: cover;
+    border-bottom: 0.2rem solid var(--color-red);
+}
+
+.card {
+    padding: var(--space-lg) var(--space-md) var(--space-xl);
+    background: var(--color-white);
+}
+
+.card h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--space-md);
+    color: var(--color-blue);
+}
+
+.weather-icon {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto var(--space-md);
+}
+
+.facts {
+    display: grid;
+    gap: var(--space-sm);
+    width: min(28rem, 100%);
+    margin: 0 auto;
+}
+
+.facts p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-md);
+    align-items: baseline;
+}
+
+.label {
+    font-weight: 700;
+    text-align: right;
+    color: var(--color-text);
+}
+
+.value {
+    text-align: left;
+    color: var(--color-muted);
+}
+
+footer {
+    margin-top: auto;
+    background: var(--color-yellow);
+    color: var(--color-header-text);
+    text-align: center;
+    padding: var(--space-md) var(--space-lg);
+    border-top: 0.35rem solid var(--color-blue);
+    line-height: 1.45;
+}
+
+footer p {
+    margin: var(--space-xs) 0;
+}
+
+footer p + p {
+    font-size: 0.9rem;
+}
