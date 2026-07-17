@@ -33,7 +33,7 @@
         padding: 0;
         background: var(--color-card-bg);
         border-radius: var(--radius-card);
-        box-shadow: 0 0.35rem 1.25rem rgb(0 0 0 / 0.22);
+        box-shadow: 0 0.35rem 1.25rem var(--color-shadow);
         overflow: hidden;
         align-self: start;
         justify-self: start;

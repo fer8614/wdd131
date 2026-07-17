@@ -5,8 +5,9 @@
     --color-white: #ffffff;
     --color-text: #1a1a1a;
     --color-muted: #333333;
-    --color-card-bg: rgb(255 255 255 / 0.9);
+    --color-card-bg: #ffffffe6;
     --color-header-text: #1a1a1a;
+    --color-shadow: #00000038;
     --font-main: "Plus Jakarta Sans", sans-serif;
     --space-xs: 0.35rem;
     --space-sm: 0.65rem;
