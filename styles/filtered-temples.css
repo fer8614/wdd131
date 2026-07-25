@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Yuyu", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgb(20, 20, 20);
+    background: rgb(255, 255, 255);
+}
+
+.site-header {
+    background: rgb(182, 222, 255);
+    padding: 0.85rem 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+}
+
+.site-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.menu-button {
+    border: 0;
+    background: rgb(255 255 255 / 0);
+    color: rgb(20, 20, 20);
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.25rem 0.2rem;
+    cursor: pointer;
+}
+
+#primary-nav {
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background: rgb(148, 186, 199);
+}
+
+#primary-nav.open .navigation {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.95rem 1rem;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background: rgb(255 255 255 / 0.35);
+    text-decoration: underline;
+}
+
+main {
+    width: min(1080px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 1.75rem 0 2.25rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: none;
+    background-color: #efefef;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+section p {
+    text-align: center;
+    padding-top: 0.1rem;
+    font-size: 0.95rem;
+}
+
+section p span.label {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+    background: rgb(182, 222, 255);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+footer p+p {
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.1rem 0;
+}

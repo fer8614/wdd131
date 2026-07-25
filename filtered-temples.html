@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="This is a temple album for the Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Yesid Fernando Cepeda">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuyu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-title">Temple Album</div>
+        <button id="menu" class="menu-button" type="button" aria-label="Toggle navigation" aria-controls="primary-nav"
+            aria-expanded="false">☰</button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul class="navigation">
+                <li><a href="#" id="Home">Home</a></li>
+                <li><a href="#" id="Old">Old</a></li>
+                <li><a href="#" id="New">New</a></li>
+                <li><a href="#" id="Large">Large</a></li>
+                <li><a href="#" id="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="res-grid gallery" aria-label="Temple photo gallery">
+            <!-- Temple cards will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span>🌴☀️🐚 Yesid Fernando Cepeda B.🌴☀️🐚 Colombia</p>
+        <p id="lastmodified">Last Modified: </p>
+    </footer>
+</body>
+
+</html>
