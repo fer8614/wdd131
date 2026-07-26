@@ -89,7 +89,7 @@ const temples = [
         templeName: "Concepción Chile Temple",
         location: "Concepción, Chile",
         dedicated: "2018, October, 28",
-        area: 11500,
+        area: 23095,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/concepcion-chile/2018/400x250/01-Concepcion-Chile-Temple-2113673.jpg"
     },
@@ -97,7 +97,7 @@ const temples = [
         templeName: "Edmonton Alberta Temple",
         location: "Edmonton, Alberta, Canada",
         dedicated: "2011, December, 11",
-        area: 11500,
+        area: 10700,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/edmonton-alberta/400x250/edmonton-alberta-temple-lds-83329-wallpaper.jpg"
     },
@@ -105,7 +105,7 @@ const temples = [
         templeName: "Frankfurt Germany Temple",
         location: "Frankfurt, Germany",
         dedicated: "1987, August, 28",
-        area: 11500,
+        area: 32895,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/frankfurt-germany/400x250/frankfurt-temple-1-2278179.jpg"
     },
