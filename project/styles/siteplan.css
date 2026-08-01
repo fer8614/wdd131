@@ -1,0 +1,421 @@
+/* Oregon Waterfalls Guide — Site Plan Styles */
+
+:root {
+  --color-forest: #1b4332;
+  --color-cascade: #0e7490;
+  --color-moss: #52796f;
+  --color-mist: #eef5f2;
+  --color-foam: #ffffff;
+  --color-charcoal: #1f2933;
+  --color-stone: #5b6b73;
+
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  --max-width: 56rem;
+  --space: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-charcoal);
+  background:
+    linear-gradient(180deg, #dceee8 0%, var(--color-mist) 28%, var(--color-mist) 100%);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-cascade);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-forest);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-forest);
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--color-cascade);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-cascade);
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--color-charcoal);
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+li+li {
+  margin-top: 0.4rem;
+}
+
+/* Header */
+
+.site-header {
+  background: var(--color-forest);
+  color: var(--color-foam);
+  padding: 1.5rem var(--space);
+}
+
+.brand {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.brand-text h1 {
+  color: var(--color-foam);
+  margin: 0;
+}
+
+.tagline {
+  margin: 0.2rem 0 0;
+  color: #c8ddd4;
+  font-size: 0.98rem;
+}
+
+.doc-label {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9fc5b5;
+}
+
+/* Layout */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.75rem var(--space) 3rem;
+}
+
+.plan-section {
+  background: var(--color-foam);
+  padding: 1.5rem 1.35rem;
+  margin-bottom: 1.35rem;
+  border-left: 5px solid var(--color-cascade);
+  box-shadow: 0 1px 0 rgba(27, 67, 50, 0.06);
+}
+
+.plan-section:nth-child(even) {
+  border-left-color: var(--color-moss);
+}
+
+.domain {
+  font-family: var(--font-body);
+  color: var(--color-cascade);
+  font-weight: 600;
+}
+
+/* Color schema swatches */
+
+.swatch-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.swatch-item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.swatch {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid rgba(31, 41, 51, 0.15);
+}
+
+.swatch-forest {
+  background: var(--color-forest);
+}
+
+.swatch-cascade {
+  background: var(--color-cascade);
+}
+
+.swatch-moss {
+  background: var(--color-moss);
+}
+
+.swatch-mist {
+  background: var(--color-mist);
+}
+
+.swatch-charcoal {
+  background: var(--color-charcoal);
+}
+
+.swatch-meta {
+  margin: 0;
+}
+
+.swatch-meta strong {
+  display: block;
+  font-family: var(--font-heading);
+  color: var(--color-forest);
+  margin-bottom: 0.2rem;
+}
+
+.hex {
+  font-family: ui-monospace, monospace;
+  color: var(--color-cascade);
+  font-size: 0.95rem;
+}
+
+/* Typography samples */
+
+.font-samples {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.font-card {
+  padding: 1rem;
+  background: var(--color-mist);
+  border-top: 4px solid var(--color-moss);
+}
+
+.font-card.heading-sample {
+  font-family: var(--font-heading);
+}
+
+.font-card.body-sample {
+  font-family: var(--font-body);
+}
+
+.font-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-stone);
+  font-family: var(--font-body);
+}
+
+.font-card.heading-sample .sample-text {
+  font-size: 1.65rem;
+  color: var(--color-forest);
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.font-card.body-sample .sample-text {
+  margin: 0 0 0.35rem;
+  color: var(--color-charcoal);
+}
+
+.usage {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-stone);
+  font-family: var(--font-body);
+}
+
+/* Wireframes */
+
+.wireframe-group {
+  margin-top: 1.25rem;
+}
+
+.wireframe-group h3 {
+  margin-bottom: 0.65rem;
+}
+
+.wireframe {
+  background: var(--color-mist);
+  border: 2px dashed var(--color-moss);
+  padding: 0.75rem;
+  max-width: 100%;
+}
+
+.wireframe-desktop {
+  max-width: 100%;
+}
+
+.wf-block {
+  background: var(--color-foam);
+  border: 1px solid var(--color-moss);
+  color: var(--color-stone);
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 0.55rem 0.4rem;
+  margin-bottom: 0.45rem;
+  font-family: var(--font-body);
+}
+
+.wf-header {
+  background: var(--color-forest);
+  color: var(--color-foam);
+  border-color: var(--color-forest);
+}
+
+.wf-nav {
+  background: var(--color-cascade);
+  color: var(--color-foam);
+  border-color: var(--color-cascade);
+}
+
+.wf-hero {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c5ddd4;
+  border-color: var(--color-moss);
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.wf-cta {
+  background: var(--color-cascade);
+  color: var(--color-foam);
+  border-color: var(--color-cascade);
+  max-width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wf-footer {
+  background: var(--color-forest);
+  color: var(--color-foam);
+  border-color: var(--color-forest);
+  margin-bottom: 0;
+}
+
+.wf-row {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.wf-row-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.wf-row-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wf-map {
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7ebe4;
+}
+
+.wf-aside {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.desktop-main .wf-block {
+  margin-bottom: 0;
+}
+
+.desktop-main .wf-stack {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.wire-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+  color: var(--color-stone);
+}
+
+/* Planned pages note */
+
+.note-list li::marker {
+  color: var(--color-cascade);
+}
+
+/* Footer */
+
+.site-footer {
+  background: var(--color-forest);
+  color: #c8ddd4;
+  text-align: center;
+  padding: 1.25rem var(--space);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+  color: inherit;
+}
+
+.site-footer a {
+  color: #9ed8e8;
+}

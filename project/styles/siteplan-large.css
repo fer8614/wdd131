@@ -1,0 +1,24 @@
+@media screen and (min-width: 700px) {
+    .plan-section {
+        padding: 1.75rem 1.75rem;
+    }
+
+    .font-samples {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .swatch-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wireframes {
+        display: grid;
+        grid-template-columns: minmax(12rem, 16rem) 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .wireframe-group {
+        margin-top: 0;
+    }
+}

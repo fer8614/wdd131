@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon Waterfalls Guide | Site Plan</title>
+    <meta name="description"
+        content="Website planning document for Oregon Waterfalls Guide: site name, purpose, scenarios, color schema, typography, and home page wireframes.">
+    <meta name="author" content="Yesid Fernando Cepeda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Oregon Waterfalls Guide logo">
+                <rect width="64" height="64" rx="8" fill="#0e7490" />
+                <path d="M8 42h48v10H8z" fill="#1b4332" />
+                <path d="M18 42c2-10 6-18 14-26 8 8 12 16 14 26H18z" fill="#eef5f2" />
+                <path d="M28 20c1 4 2 8 4 12 2-4 3-8 4-12-2-1-6-1-8 0z" fill="#52796f" />
+                <circle cx="46" cy="14" r="5" fill="#eef5f2" opacity="0.85" />
+            </svg>
+            <div class="brand-text">
+                <h1>Oregon Waterfalls Guide</h1>
+                <p class="tagline">Plan your next waterfall adventure across the state</p>
+                <span class="doc-label">W05 Website Planning Document</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="plan-section" id="site-name" aria-labelledby="site-name-heading">
+            <h2 id="site-name-heading">1. Site Name</h2>
+            <p>
+                <strong>Oregon Waterfalls Guide</strong>
+                <span class="domain"> · oregonwaterfallguide.com</span>
+            </p>
+            <p>
+                This name clearly describes the site’s focus: a practical guide to Oregon’s waterfalls.
+                It is easy to remember, search-friendly, and matches the project subject. The optional
+                domain reinforces the brand for locals and visitors planning outdoor trips.
+            </p>
+        </section>
+
+        <section class="plan-section" id="site-purpose" aria-labelledby="site-purpose-heading">
+            <h2 id="site-purpose-heading">2. Site Purpose</h2>
+            <p>
+                Oregon Waterfalls Guide is an interactive online resource that helps hikers, families,
+                and travelers discover waterfalls across Oregon and plan safe, enjoyable visits.
+            </p>
+            <p>The site will provide:</p>
+            <ul class="note-list">
+                <li>An organized directory of notable Oregon waterfalls with trail details, difficulty, distance, pet policies, and parking notes.</li>
+                <li>Region-based browsing and filters so users can find falls by area or trip needs.</li>
+                <li>Photo galleries, seasonal timing tips, and safety guidance for each location.</li>
+                <li>A Hidden Gems section highlighting lesser-known waterfalls for adventurous hikers.</li>
+                <li>A contact / trip-planning form so visitors can request tips or share feedback (planned for Week 06).</li>
+            </ul>
+            <p>
+                Planned pages for Week 06: <strong>Home</strong>, <strong>Waterfalls Directory</strong>,
+                and <strong>Plan a Visit</strong> (form + tips), with consistent navigation and a shared visual theme.
+            </p>
+        </section>
+
+        <section class="plan-section" id="scenarios" aria-labelledby="scenarios-heading">
+            <h2 id="scenarios-heading">3. Scenarios</h2>
+            <p>
+                These questions represent the target audience—Oregon locals and tourists planning outdoor trips—and will guide the site’s content.
+            </p>
+            <ul class="note-list">
+                <li>Which waterfall near Portland has an easy trail that is dog-friendly and has reliable parking?</li>
+                <li>What is the best season to visit Multnomah Falls, and what safety tips should I know before I go?</li>
+                <li>Where can I find lesser-known “hidden gem” waterfalls if I want a quieter hike away from crowded viewpoints?</li>
+            </ul>
+        </section>
+
+        <section class="plan-section" id="color-schema" aria-labelledby="color-schema-heading">
+            <h2 id="color-schema-heading">4. Color Schema</h2>
+            <p>
+                The palette draws from Oregon forests, cascading water, and misty trail mornings.
+                These colors are applied throughout this planning document.
+            </p>
+            <ul class="swatch-list">
+                <li class="swatch-item">
+                    <div class="swatch swatch-forest" aria-hidden="true"></div>
+                    <div class="swatch-meta">
+                        <strong>Forest Green</strong>
+                        <span class="hex">#1B4332</span>
+                        <p>Header, footer, primary headings, and strong brand surfaces.</p>
+                    </div>
+                </li>
+                <li class="swatch-item">
+                    <div class="swatch swatch-cascade" aria-hidden="true"></div>
+                    <div class="swatch-meta">
+                        <strong>Cascade Teal</strong>
+                        <span class="hex">#0E7490</span>
+                        <p>Links, accents, section borders, buttons, and navigation highlights.</p>
+                    </div>
+                </li>
+                <li class="swatch-item">
+                    <div class="swatch swatch-moss" aria-hidden="true"></div>
+                    <div class="swatch-meta">
+                        <strong>Moss</strong>
+                        <span class="hex">#52796F</span>
+                        <p>Secondary accents, wireframe outlines, and supporting UI details.</p>
+                    </div>
+                </li>
+                <li class="swatch-item">
+                    <div class="swatch swatch-mist" aria-hidden="true"></div>
+                    <div class="swatch-meta">
+                        <strong>Mist</strong>
+                        <span class="hex">#EEF5F2</span>
+                        <p>Page background and soft content panels.</p>
+                    </div>
+                </li>
+                <li class="swatch-item">
+                    <div class="swatch swatch-charcoal" aria-hidden="true"></div>
+                    <div class="swatch-meta">
+                        <strong>Charcoal</strong>
+                        <span class="hex">#1F2933</span>
+                        <p>Body paragraph text for readable contrast on light backgrounds.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="plan-section" id="typography" aria-labelledby="typography-heading">
+            <h2 id="typography-heading">5. Typography</h2>
+            <p>
+                Two Google Fonts keep the site readable and distinctive: an editorial serif for titles
+                and a clean sans-serif for body content.
+            </p>
+            <div class="font-samples">
+                <div class="font-card heading-sample">
+                    <p class="font-label">Heading font</p>
+                    <p class="sample-text">Fraunces</p>
+                    <p class="usage">Used for page titles and section headings (h1–h3).</p>
+                </div>
+                <div class="font-card body-sample">
+                    <p class="font-label">Body font</p>
+                    <p class="sample-text">Source Sans 3 — Trail notes, difficulty ratings, and visitor tips stay clear and comfortable to read on phones and desktops.</p>
+                    <p class="usage">Used for paragraphs, lists, navigation labels, and form text.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section" id="wireframes" aria-labelledby="wireframes-heading">
+            <h2 id="wireframes-heading">6. Wireframes — Home Page</h2>
+            <p>
+                Simple layout diagrams for the home page on mobile and desktop. Boxes show content regions
+                and relationships, not final copy or images.
+            </p>
+
+            <div class="wireframes">
+                <div class="wireframe-group">
+                    <h3>Mobile view</h3>
+                    <div class="wireframe wireframe-mobile" aria-label="Mobile home page wireframe">
+                        <div class="wf-block wf-header">Logo + Site Name</div>
+                        <div class="wf-block wf-nav">Nav (Home | Waterfalls | Plan a Visit)</div>
+                        <div class="wf-block wf-hero">Hero photo + short intro</div>
+                        <div class="wf-block wf-cta">Explore Waterfalls CTA</div>
+                        <div class="wf-block">Featured waterfall cards (stacked)</div>
+                        <div class="wf-block wf-map">Region / map preview</div>
+                        <div class="wf-block">Hidden Gems teaser</div>
+                        <div class="wf-block wf-footer">Footer + references link</div>
+                    </div>
+                    <p class="wire-note">Single column. Content stacks vertically for portrait phones.</p>
+                </div>
+
+                <div class="wireframe-group">
+                    <h3>Desktop view</h3>
+                    <div class="wireframe wireframe-desktop" aria-label="Desktop home page wireframe">
+                        <div class="wf-block wf-header">Logo + Site Name + Tagline</div>
+                        <div class="wf-block wf-nav">Horizontal navigation</div>
+                        <div class="wf-block wf-hero">Full-width hero image with intro and primary CTA</div>
+                        <div class="desktop-main">
+                            <div class="wf-stack">
+                                <div class="wf-block">Featured waterfalls (3-card row)</div>
+                                <div class="wf-block">Seasonal tips &amp; safety highlights</div>
+                            </div>
+                            <div class="wf-block wf-aside">Quick filters / region list</div>
+                        </div>
+                        <div class="wf-row wf-row-2">
+                            <div class="wf-block wf-map">Interactive map / region finder</div>
+                            <div class="wf-block">Hidden Gems preview</div>
+                        </div>
+                        <div class="wf-block wf-footer">Footer · copyright · references</div>
+                    </div>
+                    <p class="wire-note">Wider layout uses columns for featured content, filters, and map side-by-side.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Yesid Fernando Cepeda · Oregon Waterfalls Guide</p>
+        <p>WDD 131 — Week 05 Site Plan · Living document for Week 06 development</p>
+    </footer>
+</body>
+
+</html>
