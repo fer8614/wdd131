@@ -8,6 +8,11 @@
     --color-accent-hover: #a34b1e;
     --color-border: #b7c4c8;
     --color-focus: #1a7a8c;
+    --color-on-dark: #ffffff;
+    --color-footer-text: #d7e6ea;
+    --color-star: #ffd700;
+    --color-star-hover: #000000;
+    --color-transparent: #00000000;
     --font-heading: "Outfit", sans-serif;
     --font-body: "Source Sans 3", sans-serif;
     --radius: 0.35rem;
@@ -34,7 +39,7 @@ body {
 
 .site-header {
     background: var(--color-header);
-    color: #ffffff;
+    color: var(--color-on-dark);
     text-align: center;
     padding: 1.1rem var(--space);
 }
@@ -93,7 +98,7 @@ textarea {
     width: 100%;
     font: inherit;
     color: var(--color-ink);
-    background: #ffffff;
+    background: var(--color-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     padding: 0.65rem 0.7rem;
@@ -121,11 +126,11 @@ textarea {
 .stars input[type="radio"] {
     display: none;
     position: relative;
-    caret-color: rgba(0, 0, 0, 0);
+    caret-color: var(--color-transparent);
 }
 
 .stars > label {
-    color: gold;
+    color: var(--color-star);
     width: 30px;
     height: 30px;
     font-size: 2rem;
@@ -133,12 +138,12 @@ textarea {
     display: flex;
     align-items: center;
     cursor: pointer;
-    caret-color: rgba(0, 0, 0, 0);
+    caret-color: var(--color-transparent);
 }
 
 .stars > label:hover,
 .stars > label:hover ~ label {
-    color: #000000;
+    color: var(--color-star-hover);
 }
 
 .stars > label::before {
@@ -190,7 +195,7 @@ input[type="submit"] {
     font-family: var(--font-heading);
     font-size: 1.05rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-on-dark);
     background: var(--color-accent);
     border: 2px solid var(--color-header);
     border-radius: var(--radius);
@@ -260,7 +265,7 @@ input[type="submit"]:focus-visible {
 footer {
     margin-top: auto;
     background: var(--color-header);
-    color: #d7e6ea;
+    color: var(--color-footer-text);
     text-align: center;
     padding: 0.85rem var(--space);
     line-height: 1.4;
