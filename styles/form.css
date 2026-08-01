@@ -1,18 +1,4 @@
 :root {
-    --color-ink: #1c2429;
-    --color-muted: #4a5a64;
-    --color-surface: #f3f6f4;
-    --color-card: #ffffff;
-    --color-header: #0f3d4c;
-    --color-accent: #c45c26;
-    --color-accent-hover: #a34b1e;
-    --color-border: #b7c4c8;
-    --color-focus: #1a7a8c;
-    --color-on-dark: #ffffff;
-    --color-footer-text: #d7e6ea;
-    --color-star: #ffd700;
-    --color-star-hover: #000000;
-    --color-transparent: #00000000;
     --font-heading: "Outfit", sans-serif;
     --font-body: "Source Sans 3", sans-serif;
     --radius: 0.35rem;
@@ -33,13 +19,13 @@ body {
     font-family: var(--font-body);
     font-size: 1.05rem;
     line-height: 1.55;
-    color: var(--color-ink);
-    background: var(--color-surface);
+    color: #1c2429;
+    background: #f3f6f4;
 }
 
 .site-header {
-    background: var(--color-header);
-    color: var(--color-on-dark);
+    background: #0f3d4c;
+    color: #ffffff;
     text-align: center;
     padding: 1.1rem var(--space);
 }
@@ -59,8 +45,8 @@ main {
 }
 
 .review-form {
-    background: var(--color-card);
-    border: 1px solid var(--color-border);
+    background: #ffffff;
+    border: 1px solid #b7c4c8;
     border-radius: var(--radius);
     padding: 1.25rem 1rem 1.5rem;
     display: grid;
@@ -77,12 +63,12 @@ legend {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 1rem;
-    color: var(--color-ink);
+    color: #1c2429;
 }
 
 .optional {
     font-weight: 400;
-    color: var(--color-muted);
+    color: #4a5a64;
     font-size: 0.92rem;
 }
 
@@ -97,9 +83,9 @@ input[type="text"],
 textarea {
     width: 100%;
     font: inherit;
-    color: var(--color-ink);
-    background: var(--color-card);
-    border: 1px solid var(--color-border);
+    color: #1c2429;
+    background: #ffffff;
+    border: 1px solid #b7c4c8;
     border-radius: var(--radius);
     padding: 0.65rem 0.7rem;
 }
@@ -107,7 +93,7 @@ textarea {
 select:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-    outline: 2px solid var(--color-focus);
+    outline: 2px solid #1a7a8c;
     outline-offset: 2px;
 }
 
@@ -126,11 +112,11 @@ textarea {
 .stars input[type="radio"] {
     display: none;
     position: relative;
-    caret-color: var(--color-transparent);
+    caret-color: #00000000;
 }
 
 .stars > label {
-    color: var(--color-star);
+    color: #ffd700;
     width: 30px;
     height: 30px;
     font-size: 2rem;
@@ -138,12 +124,12 @@ textarea {
     display: flex;
     align-items: center;
     cursor: pointer;
-    caret-color: var(--color-transparent);
+    caret-color: #00000000;
 }
 
 .stars > label:hover,
 .stars > label:hover ~ label {
-    color: var(--color-star-hover);
+    color: #000000;
 }
 
 .stars > label::before {
@@ -155,7 +141,7 @@ textarea {
 }
 
 .stars input:focus-visible + label {
-    outline: 2px solid var(--color-focus);
+    outline: 2px solid #1a7a8c;
     outline-offset: 2px;
     border-radius: 2px;
 }
@@ -175,7 +161,7 @@ textarea {
 .checkbox-option input {
     width: 1.1rem;
     height: 1.1rem;
-    accent-color: var(--color-header);
+    accent-color: #0f3d4c;
     cursor: pointer;
 }
 
@@ -195,9 +181,9 @@ input[type="submit"] {
     font-family: var(--font-heading);
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--color-on-dark);
-    background: var(--color-accent);
-    border: 2px solid var(--color-header);
+    color: #ffffff;
+    background: #c45c26;
+    border: 2px solid #0f3d4c;
     border-radius: var(--radius);
     padding: 0.7rem 1.75rem;
     cursor: pointer;
@@ -206,11 +192,11 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus-visible {
-    background: var(--color-accent-hover);
+    background: #a34b1e;
 }
 
 input[type="submit"]:focus-visible {
-    outline: 2px solid var(--color-focus);
+    outline: 2px solid #1a7a8c;
     outline-offset: 2px;
 }
 
@@ -222,8 +208,8 @@ input[type="submit"]:focus-visible {
 
 .confirm-card {
     width: 100%;
-    background: var(--color-card);
-    border: 1px solid var(--color-border);
+    background: #ffffff;
+    border: 1px solid #b7c4c8;
     border-radius: var(--radius);
     padding: 1.75rem 1.25rem;
     text-align: center;
@@ -231,41 +217,41 @@ input[type="submit"]:focus-visible {
 
 .confirm-card h2 {
     font-family: var(--font-heading);
-    color: var(--color-header);
+    color: #0f3d4c;
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
 }
 
 .confirm-card p {
     margin-bottom: 0.85rem;
-    color: var(--color-muted);
+    color: #4a5a64;
 }
 
 .counter-line {
     font-size: 1.15rem;
-    color: var(--color-ink) !important;
+    color: #1c2429 !important;
 }
 
 .counter-line strong {
-    color: var(--color-accent);
+    color: #c45c26;
     font-size: 1.35rem;
 }
 
 .back-link {
-    color: var(--color-header);
+    color: #0f3d4c;
     font-weight: 600;
     text-decoration: underline;
 }
 
 .back-link:hover,
 .back-link:focus-visible {
-    color: var(--color-accent);
+    color: #c45c26;
 }
 
 footer {
     margin-top: auto;
-    background: var(--color-header);
-    color: var(--color-footer-text);
+    background: #0f3d4c;
+    color: #d7e6ea;
     text-align: center;
     padding: 0.85rem var(--space);
     line-height: 1.4;
