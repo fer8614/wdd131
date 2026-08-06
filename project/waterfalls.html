@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfalls Directory | Oregon Waterfalls Guide</title>
+    <meta name="description"
+        content="Browse Oregon waterfalls by region, difficulty, and pet policy. Includes trail distances, parking notes, and seasonal tips.">
+    <meta name="author" content="Yesid Fernando Cepeda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/waterfalls.css">
+    <link rel="stylesheet" href="styles/waterfalls-large.css">
+    <script src="scripts/waterfalls-data.js" defer></script>
+    <script src="scripts/waterfalls.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Oregon Waterfalls Guide logo">
+                <rect width="64" height="64" rx="8" fill="#0e7490" />
+                <path d="M8 42h48v10H8z" fill="#1b4332" />
+                <path d="M18 42c2-10 6-18 14-26 8 8 12 16 14 26H18z" fill="#eef5f2" />
+                <path d="M28 20c1 4 2 8 4 12 2-4 3-8 4-12-2-1-6-1-8 0z" fill="#52796f" />
+                <circle cx="46" cy="14" r="5" fill="#eef5f2" opacity="0.85" />
+            </svg>
+            <div class="brand-text">
+                <p class="site-title">Oregon Waterfalls Guide</p>
+                <p class="tagline">Plan your next waterfall adventure</p>
+            </div>
+        </a>
+        <button id="menu" class="menu-button" type="button" aria-label="Toggle navigation"
+            aria-controls="primary-nav" aria-expanded="false">☰</button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="waterfalls.html" aria-current="page">Waterfalls</a></li>
+                <li><a href="plan.html">Plan a Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-intro">
+            <h1>Waterfalls Directory</h1>
+            <p>
+                Filter Oregon’s cascades by region, trail difficulty, and trip needs. Use the region map to jump
+                straight to an area, then refine with the controls below.
+            </p>
+        </header>
+
+        <section class="filters-bar" aria-label="Directory filters">
+            <label for="filter-region">Region
+                <select id="filter-region" name="region">
+                    <option value="all">All regions</option>
+                    <option value="Columbia Gorge">Columbia Gorge</option>
+                    <option value="Mount Hood">Mount Hood</option>
+                    <option value="Cascades">Cascades</option>
+                    <option value="Central Oregon">Central Oregon</option>
+                    <option value="Southern Oregon">Southern Oregon</option>
+                    <option value="Willamette Valley">Willamette Valley</option>
+                    <option value="Coast">Coast</option>
+                </select>
+            </label>
+
+            <label for="filter-difficulty">Difficulty
+                <select id="filter-difficulty" name="difficulty">
+                    <option value="all">All levels</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Moderate">Moderate</option>
+                </select>
+            </label>
+
+            <div class="checkbox-row">
+                <label for="filter-pets">
+                    <input type="checkbox" id="filter-pets" name="pets">
+                    Dog-friendly only
+                </label>
+                <label for="filter-gems">
+                    <input type="checkbox" id="filter-gems" name="gems">
+                    Hidden gems only
+                </label>
+            </div>
+
+            <div class="filter-actions">
+                <button type="button" class="btn btn-secondary" id="clear-filters">Clear filters</button>
+                <p id="result-count"></p>
+            </div>
+        </section>
+
+        <div class="directory-layout">
+            <aside class="region-map" aria-labelledby="map-heading">
+                <h2 id="map-heading">Region Finder</h2>
+                <p>Select a region to filter the directory. This interactive map keeps planning focused without leaving the page.</p>
+                <div class="region-buttons">
+                    <button type="button" data-region="all" aria-pressed="true">All regions</button>
+                    <button type="button" data-region="Columbia Gorge" aria-pressed="false">Columbia Gorge</button>
+                    <button type="button" data-region="Mount Hood" aria-pressed="false">Mount Hood</button>
+                    <button type="button" data-region="Cascades" aria-pressed="false">Cascades</button>
+                    <button type="button" data-region="Central Oregon" aria-pressed="false">Central Oregon</button>
+                    <button type="button" data-region="Southern Oregon" aria-pressed="false">Southern Oregon</button>
+                    <button type="button" data-region="Willamette Valley" aria-pressed="false">Willamette Valley</button>
+                    <button type="button" data-region="Coast" aria-pressed="false">Coast</button>
+                </div>
+            </aside>
+
+            <section aria-labelledby="gallery-heading">
+                <h2 id="gallery-heading" class="visually-hidden">Waterfall results</h2>
+                <div id="waterfall-gallery" class="card-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Yesid Fernando Cepeda · Oregon Waterfalls Guide</p>
+        <p id="lastmodified"></p>
+        <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+    </footer>
+</body>
+
+</html>

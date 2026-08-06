@@ -1,0 +1,50 @@
+@media screen and (min-width: 700px) {
+  .site-header {
+    padding: 0.85rem 1.5rem;
+    align-items: center;
+  }
+
+  .tagline {
+    display: block;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  #primary-nav {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    gap: 0.15rem;
+  }
+
+  .navigation a {
+    padding: 0.55rem 0.9rem;
+    border-radius: var(--radius);
+  }
+
+  .navigation a[aria-current="page"] {
+    background: var(--color-cascade);
+  }
+
+  main {
+    width: min(var(--max-width), calc(100% - 3rem));
+    padding: 2rem 0 3rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon Waterfalls Guide | Home</title>
+    <meta name="description"
+        content="Plan waterfall hikes across Oregon with trail guides, region filters, safety tips, and hidden gem recommendations.">
+    <meta name="author" content="Yesid Fernando Cepeda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/waterfalls-data.js" defer></script>
+    <script src="scripts/waterfalls.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Oregon Waterfalls Guide logo">
+                <rect width="64" height="64" rx="8" fill="#0e7490" />
+                <path d="M8 42h48v10H8z" fill="#1b4332" />
+                <path d="M18 42c2-10 6-18 14-26 8 8 12 16 14 26H18z" fill="#eef5f2" />
+                <path d="M28 20c1 4 2 8 4 12 2-4 3-8 4-12-2-1-6-1-8 0z" fill="#52796f" />
+                <circle cx="46" cy="14" r="5" fill="#eef5f2" opacity="0.85" />
+            </svg>
+            <div class="brand-text">
+                <p class="site-title">Oregon Waterfalls Guide</p>
+                <p class="tagline">Plan your next waterfall adventure</p>
+            </div>
+        </a>
+        <button id="menu" class="menu-button" type="button" aria-label="Toggle navigation"
+            aria-controls="primary-nav" aria-expanded="false">☰</button>
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul class="navigation">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="waterfalls.html">Waterfalls</a></li>
+                <li><a href="plan.html">Plan a Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <h1 id="hero-heading" class="hero-brand">Oregon Waterfalls Guide</h1>
+            <p class="hero-text">
+                Discover trail-ready details for Oregon’s most memorable cascades—from the Columbia River Gorge
+                to quiet Coast Range gems.
+            </p>
+            <a class="btn" href="waterfalls.html">Explore Waterfalls</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="section-block" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Waterfalls</h2>
+            <p>
+                Start with these standout stops: iconic views, clear parking notes, and trails that work for
+                many skill levels.
+            </p>
+            <div id="featured-grid" class="card-grid"></div>
+        </section>
+
+        <section class="section-block home-split" aria-labelledby="regions-heading">
+            <div>
+                <h2 id="regions-heading">Browse by Region</h2>
+                <p>
+                    Oregon’s waterfall country stretches from coastal rainforests to high Cascades and desert
+                    canyons. Pick a region to open the directory with that filter applied.
+                </p>
+                <ul class="region-list">
+                    <li><a href="waterfalls.html?region=Columbia%20Gorge">Columbia Gorge</a></li>
+                    <li><a href="waterfalls.html?region=Mount%20Hood">Mount Hood</a></li>
+                    <li><a href="waterfalls.html?region=Cascades">Cascades</a></li>
+                    <li><a href="waterfalls.html?region=Central%20Oregon">Central Oregon</a></li>
+                    <li><a href="waterfalls.html?region=Southern%20Oregon">Southern Oregon</a></li>
+                    <li><a href="waterfalls.html?region=Coast">Coast</a></li>
+                    <li><a href="waterfalls.html?region=Willamette%20Valley">Willamette Valley</a></li>
+                </ul>
+            </div>
+            <aside class="tips-panel" aria-labelledby="season-heading">
+                <h2 id="season-heading">Season &amp; Safety</h2>
+                <ul>
+                    <li>Late spring often brings the strongest flows after snowmelt.</li>
+                    <li>Stay on marked trails—mossy basalt and cliff edges are slippery year-round.</li>
+                    <li>Carry rain layers; gorge and Cascade weather can shift within an hour.</li>
+                    <li>Check road and trailhead alerts before remote Umpqua or McKenzie trips.</li>
+                </ul>
+                <p><a class="btn btn-secondary" href="plan.html">Get trip tips</a></p>
+            </aside>
+        </section>
+
+        <section class="section-block" aria-labelledby="gems-heading">
+            <h2 id="gems-heading">Hidden Gems</h2>
+            <p>
+                Prefer quieter trails? These lesser-crowded falls reward hikers willing to leave the busiest
+                viewpoints behind.
+            </p>
+            <div id="gems-grid" class="card-grid"></div>
+            <p>
+                <a class="btn" href="waterfalls.html">View full directory</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Yesid Fernando Cepeda · Oregon Waterfalls Guide</p>
+        <p id="lastmodified"></p>
+        <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+    </footer>
+</body>
+
+</html>

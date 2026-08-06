@@ -1,0 +1,110 @@
+/* Waterfalls directory styles */
+
+.filters-bar {
+  display: grid;
+  gap: 0.85rem;
+  background: var(--color-foam);
+  padding: 1.15rem 1.1rem;
+  margin-bottom: 1.25rem;
+  border-left: 5px solid var(--color-cascade);
+}
+
+.filters-bar label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--color-forest);
+}
+
+.filters-bar select,
+.plan-form input,
+.plan-form select,
+.plan-form textarea {
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+  border: 1.5px solid var(--color-moss);
+  border-radius: var(--radius);
+  color: var(--color-charcoal);
+  background: var(--color-mist);
+}
+
+.checkbox-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  align-items: center;
+}
+
+.checkbox-row label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+
+.checkbox-row input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--color-cascade);
+}
+
+.filter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+#result-count {
+  margin: 0;
+  color: var(--color-stone);
+  font-size: 0.98rem;
+}
+
+.region-map {
+  background: var(--color-foam);
+  padding: 1.25rem 1.1rem;
+  margin-bottom: 1.5rem;
+  border-top: 4px solid var(--color-moss);
+}
+
+.region-map p {
+  margin-bottom: 0.85rem;
+}
+
+.region-buttons {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.region-buttons button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.7rem 0.6rem;
+  border: 2px solid var(--color-moss);
+  background: var(--color-mist);
+  color: var(--color-forest);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.region-buttons button:hover,
+.region-buttons button:focus-visible {
+  border-color: var(--color-cascade);
+  color: var(--color-cascade);
+}
+
+.region-buttons button.active {
+  background: var(--color-cascade);
+  border-color: var(--color-cascade);
+  color: var(--color-foam);
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  background: var(--color-foam);
+  padding: 1.25rem;
+  border-left: 4px solid var(--color-moss);
+}

@@ -1,0 +1,356 @@
+/* Oregon Waterfalls Guide — shared base styles (mobile first) */
+
+:root {
+  --color-forest: #1b4332;
+  --color-cascade: #0e7490;
+  --color-moss: #52796f;
+  --color-mist: #eef5f2;
+  --color-foam: #ffffff;
+  --color-charcoal: #1f2933;
+  --color-stone: #5b6b73;
+  --color-mist-deep: #dceee8;
+  --color-tagline: #c8ddd4;
+  --color-accent-soft: #9ed8e8;
+
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  --max-width: 68rem;
+  --space: 1.25rem;
+  --radius: 0.35rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-charcoal);
+  background:
+    linear-gradient(180deg, var(--color-mist-deep) 0%, var(--color-mist) 28%, var(--color-mist) 100%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-cascade);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-forest);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-forest);
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-cascade);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+/* Header & navigation */
+
+.site-header {
+  background: var(--color-forest);
+  color: var(--color-foam);
+  padding: 0.85rem var(--space) 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  color: var(--color-foam);
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.brand-text {
+  min-width: 0;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-foam);
+  line-height: 1.2;
+}
+
+.tagline {
+  margin: 0.15rem 0 0;
+  color: var(--color-tagline);
+  font-size: 0.88rem;
+  display: none;
+}
+
+.menu-button {
+  border: 0;
+  background: transparent;
+  color: var(--color-foam);
+  font-size: 1.85rem;
+  line-height: 1;
+  padding: 0.25rem 0.35rem;
+  cursor: pointer;
+}
+
+#primary-nav {
+  width: 100%;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  background: var(--color-moss);
+}
+
+#primary-nav.open .navigation {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.9rem 1rem;
+  color: var(--color-foam);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible,
+.navigation a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--color-foam);
+}
+
+/* Layout helpers */
+
+main {
+  flex: 1;
+  width: min(var(--max-width), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.75rem 0 2.5rem;
+}
+
+.page-intro {
+  margin-bottom: 1.5rem;
+}
+
+.section-block {
+  margin-bottom: 2.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.35rem;
+  background: var(--color-cascade);
+  color: var(--color-foam);
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid var(--color-cascade);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--color-forest);
+  border-color: var(--color-forest);
+  color: var(--color-foam);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-cascade);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: var(--color-cascade);
+  color: var(--color-foam);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: var(--color-mist-deep);
+  color: var(--color-forest);
+  border-radius: var(--radius);
+}
+
+.badge-gem {
+  background: var(--color-cascade);
+  color: var(--color-foam);
+}
+
+/* Cards (interactive / content listings only) */
+
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.waterfall-card {
+  background: var(--color-foam);
+  border-top: 4px solid var(--color-cascade);
+  box-shadow: 0 1px 0 rgba(27, 67, 50, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.waterfall-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem 1.1rem 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body h3 {
+  margin-bottom: 0.35rem;
+}
+
+.card-meta {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  color: var(--color-stone);
+}
+
+.card-meta span + span::before {
+  content: " · ";
+  color: var(--color-moss);
+}
+
+.card-body p:last-child {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+/* Footer */
+
+.site-footer {
+  background: var(--color-forest);
+  color: var(--color-tagline);
+  text-align: center;
+  padding: 1.35rem var(--space);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+  color: inherit;
+}
+
+.site-footer a {
+  color: var(--color-accent-soft);
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--color-foam);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

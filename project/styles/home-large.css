@@ -1,0 +1,19 @@
+@media screen and (min-width: 700px) {
+  .hero {
+    min-height: 78vh;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 3.5rem 0;
+  }
+
+  .home-split {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+
+  .region-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,78 @@
+/* Home page styles */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: grid;
+  align-items: end;
+  color: var(--color-foam);
+  background:
+    linear-gradient(180deg, rgba(27, 67, 50, 0.25) 0%, rgba(27, 67, 50, 0.78) 100%),
+    url("../images/Multnomah-Falls.webp") center / cover no-repeat;
+}
+
+.hero-content {
+  width: min(var(--max-width), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 2.75rem;
+}
+
+.hero-brand {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: var(--color-foam);
+  line-height: 1.1;
+}
+
+.hero-text {
+  max-width: 34rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.12rem;
+  color: var(--color-mist);
+}
+
+.hero .btn {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.region-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.region-list a {
+  display: block;
+  padding: 0.85rem 1rem;
+  background: var(--color-foam);
+  border-left: 4px solid var(--color-cascade);
+  text-decoration: none;
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.region-list a:hover,
+.region-list a:focus-visible {
+  background: var(--color-mist-deep);
+  color: var(--color-cascade);
+}
+
+.tips-panel {
+  background: var(--color-foam);
+  padding: 1.35rem 1.25rem;
+  border-top: 4px solid var(--color-moss);
+}
+
+.tips-panel ul {
+  margin-bottom: 0;
+}
+
+.home-split {
+  display: grid;
+  gap: 1.5rem;
+}
