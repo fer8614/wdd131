@@ -11,7 +11,7 @@ const waterfalls = [
         tips: "Stay behind railings on the Benson Bridge. Ice can form on steps in winter.",
         hiddenGem: false,
         featured: true,
-        image: "images/Multnomah-Falls.webp",
+        image: "images/multnomah-falls.webp",
         alt: "Tall twin-tier Multnomah Falls cascading through a forested canyon"
     },
     {
@@ -26,7 +26,7 @@ const waterfalls = [
         tips: "The short paved path to the base is wheelchair-friendly in dry conditions.",
         hiddenGem: false,
         featured: true,
-        image: "images/Latourell-Falls.webp",
+        image: "images/latourell-falls.webp",
         alt: "Latourell Falls plunging past lichen-covered basalt cliffs"
     },
     {
@@ -41,7 +41,7 @@ const waterfalls = [
         tips: "Connect to Fairy Falls for a longer loop; carry water on warm days.",
         hiddenGem: false,
         featured: false,
-        image: "images/Wahkeena-Falls.webp",
+        image: "images/wahkeena-falls.webp",
         alt: "Wahkeena Falls spilling over mossy rock near a trail bridge"
     },
     {
@@ -56,7 +56,7 @@ const waterfalls = [
         tips: "You can walk behind the curtain of water—expect slick rock and spray.",
         hiddenGem: true,
         featured: false,
-        image: "images/Ponytail-Falls.webp",
+        image: "images/ponytail-falls.webp",
         alt: "Hikers walking behind the curtain of Ponytail Falls"
     },
     {
@@ -71,7 +71,7 @@ const waterfalls = [
         tips: "Watch for cliff exposure along Eagle Creek. No dogs on this popular trail.",
         hiddenGem: false,
         featured: false,
-        image: "images/Punchbowl-Falls.webp",
+        image: "images/punchbowl-falls.webp",
         alt: "Punchbowl Falls pouring into a turquoise pool in Eagle Creek canyon"
     },
     {
@@ -86,7 +86,7 @@ const waterfalls = [
         tips: "The loop includes bridges and stairs—sturdy shoes help after rain.",
         hiddenGem: true,
         featured: false,
-        image: "images/Wahclella_Falls.webp",
+        image: "images/wahclella-falls.webp",
         alt: "Wahclella Falls pouring through a lush green canyon"
     },
     {
@@ -101,7 +101,7 @@ const waterfalls = [
         tips: "The final approach crosses rocky creek bed—poles are useful.",
         hiddenGem: false,
         featured: false,
-        image: "images/Tamanawas-Falls-Trail.webp",
+        image: "images/tamanawas-falls-trail.webp",
         alt: "Wide curtain of Tamanawas Falls at the end of a forest trail"
     },
     {
@@ -131,7 +131,7 @@ const waterfalls = [
         tips: "A short, family-friendly walk with a rewarding basalt amphitheater view.",
         hiddenGem: true,
         featured: false,
-        image: "images/Little-Zigzag-Falls.webp",
+        image: "images/little-zigzag-falls.webp",
         alt: "Little Zigzag Falls flowing over mossy volcanic rock"
     },
     {
@@ -146,7 +146,7 @@ const waterfalls = [
         tips: "Stay on signed viewpoints—cliffs above the river are sheer and unfenced in places.",
         hiddenGem: false,
         featured: false,
-        image: "images/Sahalie-and-Koosah-Falls.webp",
+        image: "images/sahalie-and-koosah-falls.webp",
         alt: "Powerful Sahalie Falls on the McKenzie River"
     },
     {
@@ -161,7 +161,7 @@ const waterfalls = [
         tips: "Lava fields reflect heat—bring sun protection even on short hikes.",
         hiddenGem: false,
         featured: false,
-        image: "images/Proxy-Falls.webp",
+        image: "images/proxy-falls.webp",
         alt: "Proxy Falls draping a wide cliff face in the Cascades"
     },
     {
@@ -176,7 +176,7 @@ const waterfalls = [
         tips: "Stairs lead to the overlook—watch children near the railing.",
         hiddenGem: false,
         featured: true,
-        image: "images/Toketee-Falls.webp",
+        image: "images/toketee-falls.webp",
         alt: "Two-tier Toketee Falls framed by columnar basalt"
     },
     {
@@ -206,7 +206,7 @@ const waterfalls = [
         tips: "Paved path to the overlook makes this a great stop for all ages.",
         hiddenGem: false,
         featured: false,
-        image: "images/Salt-Creek-Falls.webp",
+        image: "images/salt-creek-falls.webp",
         alt: "Salt Creek Falls dropping into a deep forested canyon"
     },
     {
@@ -236,7 +236,7 @@ const waterfalls = [
         tips: "Also view Barr Creek Falls from the same short trail network.",
         hiddenGem: false,
         featured: false,
-        image: "images/Mill-Creek-Falls.webp",
+        image: "images/mill-creek-falls.webp",
         alt: "Mill Creek Falls plunging into a rocky pool near Prospect"
     },
     {
@@ -266,7 +266,7 @@ const waterfalls = [
         tips: "Exposed canyon trail—bring sun protection and extra water.",
         hiddenGem: true,
         featured: false,
-        image: "images/Steelhead-Falls.webp",
+        image: "images/steelhead-falls.webp",
         alt: "Steelhead Falls on the Deschutes River in a desert canyon"
     },
     {
@@ -281,7 +281,7 @@ const waterfalls = [
         tips: "An urban waterfall stop—pair with historic downtown Oregon City.",
         hiddenGem: false,
         featured: false,
-        image: "images/Willamette-Falls.webp",
+        image: "images/willamette-falls.webp",
         alt: "Wide Willamette Falls beside Oregon City industry and bridges"
     },
     {
@@ -311,7 +311,7 @@ const waterfalls = [
         tips: "Metal walkways can be slick when wet—use caution with kids.",
         hiddenGem: false,
         featured: false,
-        image: "images/Sweet-Creek-Falls.webp",
+        image: "images/sweet-creek-falls.webp",
         alt: "Sweet Creek Falls along a lush coastal rainforest trail"
     },
     {
@@ -326,7 +326,7 @@ const waterfalls = [
         tips: "Gentle trail suitable for families; combine with other North Umpqua stops.",
         hiddenGem: false,
         featured: false,
-        image: "images/Susan-Creek-Falls.webp",
+        image: "images/susan-creek-falls.webp",
         alt: "Susan Creek Falls pouring into a rocky pool"
     },
     {
@@ -341,7 +341,7 @@ const waterfalls = [
         tips: "Several named falls in one park—Royal Terrace and Majestic are favorites.",
         hiddenGem: true,
         featured: false,
-        image: "images/McDowell-Creek-Falls.webp",
+        image: "images/mcdowell-creek-falls.webp",
         alt: "McDowell Creek Falls surrounded by green forest near Lebanon"
     },
     {

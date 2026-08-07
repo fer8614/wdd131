@@ -9,7 +9,7 @@
   color: var(--color-foam);
   background:
     linear-gradient(180deg, rgba(27, 67, 50, 0.25) 0%, rgba(27, 67, 50, 0.78) 100%),
-    url("../images/Multnomah-Falls.webp") center / cover no-repeat;
+    url("../images/multnomah-falls.webp") center / cover no-repeat;
 }
 
 .hero-content {
