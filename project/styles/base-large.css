@@ -20,13 +20,18 @@
   .navigation {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background: transparent;
     gap: 0.15rem;
   }
 
   .navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.55rem 0.9rem;
     border-radius: var(--radius);
+    line-height: 1.2;
   }
 
   .navigation a[aria-current="page"] {

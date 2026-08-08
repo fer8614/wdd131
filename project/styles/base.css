@@ -172,7 +172,13 @@ li + li {
   padding: 0;
   display: none;
   flex-direction: column;
+  align-items: stretch;
   background: var(--color-moss);
+}
+
+.navigation li,
+.navigation li + li {
+  margin: 0;
 }
 
 #primary-nav.open .navigation {
